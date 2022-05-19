@@ -1,15 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="shortcut icon"
+			href="./img/favicon-32x32.ico"
+			type="image/x-icon"
+		/>
+		<title></title>
 	</head>
 
 	<body>
-		<nav></nav>
-		<main></main>
-		<footer></footer>
+		<div id="layout">
+			<div class="nav-bar">
+				<nav class="nav-bar-container">
+					<div class="logo-container">
+						<a href="./">
+							<svg
+								class="logo"
+								viewBox="0 0 512 512"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<rect
+									class="logo-color"
+									width="512"
+									height="512"
+									x="0"
+									y="0"
+									fill="currentColor"
+								/>
+							</svg>
+						</a>
+					</div>
+					<div class="links-container">
+						<a class="links-button" href="#about">
+							<div class="links-text">about</div>
+						</a>
+						<a class="links-button" href="#experience">
+							<div class="links-text">experience</div>
+						</a>
+						<a class="links-button" href="#work">
+							<div class="links-text">work</div>
+						</a>
+						<a class="links-button" href="#projects">
+							<div class="links-text">projects</div>
+						</a>
+						<a class="links-button" href="#contact">
+							<div class="links-text">contact</div>
+						</a>
+						<a class="links-button" href="resume.pdf">
+							<div class="links-text">resume</div>
+						</a>
+					</div>
+				</nav>
+			</div>
+			<div id="content">
+				<div class="header-container">
+					<header id="about"></header>
+				</div>
+				<div class="main-container">
+					<main>
+						<div id="experience"></div>
+						<div id="work"></div>
+						<div id="projects"></div>
+					</main>
+				</div>
+				<div class="footer-container">
+					<footer id="contact"></footer>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
