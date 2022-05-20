@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 /* colors */
+
 :root {
 	--font-sans: "Inter", sans-serif;
 	--no-color: transparent;
@@ -13,6 +14,7 @@
 }
 
 /* standardizing */
+
 * {
 	font-family: var(--font-sans);
 	font-size: 16px;
@@ -20,6 +22,7 @@
 }
 
 /* defining sizes */
+
 body {
 	width: 100%;
 }
@@ -29,6 +32,8 @@ body {
 	flex-direction: column;
 	width: 100%;
 }
+
+/* standard container */
 
 .container {
 	max-width: 1200px;
@@ -111,14 +116,11 @@ body {
 	color: var(--medium-gray);
 }
 
-#content {
-	padding-top: 64px;
-}
+/* about */
 
-.block-header {
-	color: var(--white);
+.block-sobre {
 	width: 100%;
-	height: calc(100vh - 64px);
+	height: 100vh;
 	background-image: url("../img/shrimp.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -129,12 +131,13 @@ body {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 }
 
 .sobre-text {
-	text-shadow: 0 0 1rem var(--black);
+	color: var(--white);
+	text-shadow: 0 0 0.5rem var(--dark-gray);
 }
 
 .text-h1 {
@@ -145,11 +148,56 @@ body {
 
 .text-h2 {
 	font-size: 5rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 1rem;
 	font-weight: 700;
 }
 
 .text-h3 {
 	font-size: 2.5rem;
 	font-weight: 700;
+}
+
+/* experiencia */
+
+.block-experiencia {
+	width: 100%;
+	height: 100vh;
+}
+
+#experiencia {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* projetos */
+
+.block-projetos {
+	width: 100%;
+	height: 100vh;
+}
+
+#projetos {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* contato */
+
+.block-contatos {
+	width: 100%;
+	height: 100vh;
+}
+
+#contatos {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
