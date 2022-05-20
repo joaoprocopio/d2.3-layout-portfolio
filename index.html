@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 	<head>
+		<title>layout</title>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/style.css" />
 		<link
+			href="./img/favicon-16x16.ico"
 			rel="shortcut icon"
-			href="./img/favicon-32x32.ico"
 			type="image/x-icon"
 		/>
-		<title>layout</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 
 	<body>
 		<div id="layout">
-			<div class="nav">
-				<nav class="nav-container">
+			<div class="block-nav">
+				<nav class="nav container">
 					<div class="nav-logo">
 						<a href="./">
 							<svg
@@ -31,7 +31,7 @@
 									height="512"
 									x="0"
 									y="0"
-									fill="#1a3c62"
+									fill="currentColor"
 								/>
 							</svg>
 						</a>
@@ -59,22 +59,25 @@
 				</nav>
 			</div>
 			<div id="content">
-				<div class="header-container">
-					<header id="about">
-						<h1>Jorge Silva</h1>
-						<h2>Aerospace engineer</h2>
-						<h3>Experienced software engineer</h3>
+				<div class="block-header">
+					<header class="container" id="about">
+						<div class="about-text">
+							<h1 class="text-h1">Laurinha</h1>
+							<h2 class="text-h2">do Camarão</h2>
+							<h3 class="text-h3"></h3>
+							<p class="text-p"></p>
+						</div>
 					</header>
 				</div>
-				<div class="main-container">
+				<div class="block-main">
 					<main>
-						<div id="experience"></div>
-						<div id="work"></div>
-						<div id="projects"></div>
+						<div class="container" id="experience"></div>
+						<div class="container" id="work"></div>
+						<div class="container" id="projects"></div>
 					</main>
 				</div>
-				<div class="footer-container">
-					<footer id="contact"></footer>
+				<div class="block-footer">
+					<footer class="container" id="contact"></footer>
 				</div>
 			</div>
 		</div>
