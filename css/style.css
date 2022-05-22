@@ -206,11 +206,22 @@ body {
 .galeria-container {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-evenly;
+	height: 75vh;
 }
 
 .galeria-image {
-	width: 25rem;
-	object-fit: contain;
+	width: 20rem;
+	height: 20rem;
+	min-width: 20rem;
+	min-height: 20rem;
+	object-fit: cover;
+}
+
+.galeria-text {
+	color: var(--medium-gray);
+	font-size: 0.75rem;
+	margin-top: 0.325rem;
 }
 
 /* contato */
